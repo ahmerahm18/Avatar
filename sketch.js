@@ -18,8 +18,6 @@ function setup() {
   //angle
   angleMode(degrees)
 
-  createButton("Start audio variables").mousePressed(draw);
-
   //get mic input and assign it
   mic = new p5.AudioIn();
   mic.start();
@@ -102,4 +100,8 @@ function draw() {
 
   //blink
   // use millis() with if and else statements
+}
+
+function mousePressed(){
+  draw();
 }
